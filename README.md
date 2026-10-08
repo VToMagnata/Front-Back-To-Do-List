@@ -1,4 +1,4 @@
-# 📝 Task Management App
+# 📝 Aplicativo de Gerenciamento de Tarefas
 
 [![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -8,40 +8,41 @@
 
 ---
 
-A modern task management application built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui** components. It features a clean UI, dynamic filters, CRUD operations, and a visual progress bar to track completed tasks.
+Um aplicativo moderno de gerenciamento de tarefas construído com **Next.js**, **TypeScript**, **Tailwind CSS** e componentes **shadcn/ui**. Conta com uma interface limpa, filtros dinâmicos, operações CRUD e uma barra de progresso visual para acompanhar as tarefas concluídas.
 
-## 🚀 Features
-- Create, read, update, and delete tasks (CRUD)
-- Toggle task completion status with a single click
-- Filter tasks by **All**, **Pending**, or **Completed**
-- Real-time progress bar showing completed task percentage
-- Inline task editing
-- Beautiful UI with **shadcn/ui** components
-- Fully responsive design
+## 🚀 Funcionalidades
+- Criar, ler, atualizar e excluir tarefas (CRUD)
+- Alternar o status de conclusão da tarefa com um único clique
+- Filtrar tarefas por **Todas**, **Pendentes** ou **Concluídas**
+- Barra de progresso em tempo real mostrando a porcentagem de tarefas concluídas
+- Edição de tarefas direto na lista
+- Interface bonita com componentes **shadcn/ui**
+- Design totalmente responsivo
 
-## 🛠️ Tech Stack
-- **Next.js** – React framework for server-side rendering and routing
-- **TypeScript** – Type-safe JavaScript
-- **Tailwind CSS** – Utility-first CSS framework
-- **shadcn/ui** – Accessible prebuilt UI components
-- **Prisma** – ORM for database management
-- **PostgreSQL** – Relational database for storing tasks
+## 🛠️ Tecnologias
+- **Next.js** – Framework React para renderização no servidor e roteamento
+- **TypeScript** – JavaScript com tipagem segura
+- **Tailwind CSS** – Framework CSS utility-first
+- **shadcn/ui** – Componentes de interface prontos e acessíveis
+- **Prisma** – ORM para gerenciamento do banco de dados
+- **PostgreSQL** – Banco de dados relacional para armazenar as tarefas
 
-## ⚡ How It Works
-1. **Add Tasks** – Type a task in the input field and click "Add"
-2. **Edit Tasks** – Click the **edit icon** next to a task to update it
-3. **Delete Tasks** – Click the **trash icon** to remove a task
-4. **Mark Complete** – Click the task row to toggle its done status; completed tasks get a strikethrough and update the progress bar
-5. **Filter Tasks** – Use the top badges to filter:
-   - **All** – Show all tasks
-   - **Pending** – Show only incomplete tasks
-   - **Completed** – Show only completed tasks
-6. **Progress Bar** – Automatically shows the percentage of tasks completed
+## ⚡ Como Funciona
+1. **Adicionar Tarefas** – Digite uma tarefa no campo de texto e clique em "Add"
+2. **Editar Tarefas** – Clique no **ícone de edição** ao lado da tarefa para atualizá-la
+3. **Excluir Tarefas** – Clique no **ícone de lixeira** para remover a tarefa
+4. **Marcar como Concluída** – Clique na linha da tarefa para alternar o status; tarefas concluídas ficam riscadas e atualizam a barra de progresso
+5. **Filtrar Tarefas** – Use os selos (badges) no topo para filtrar:
+   - **Todas** – Mostra todas as tarefas
+   - **Pendentes** – Mostra apenas as tarefas incompletas
+   - **Concluídas** – Mostra apenas as tarefas concluídas
+6. **Barra de Progresso** – Mostra automaticamente a porcentagem de tarefas concluídas
 
-## 🔧 Installation
+## 🔧 Instalação
 ```bash
 git clone https://github.com/your-username/task-management-app.git
 cd task-management-app
 npm install
 npx prisma migrate dev
 npm run dev
+```
