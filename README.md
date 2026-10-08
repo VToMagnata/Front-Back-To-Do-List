@@ -38,11 +38,34 @@ Um aplicativo moderno de gerenciamento de tarefas construído com **Next.js**, *
    - **Concluídas** – Mostra apenas as tarefas concluídas
 6. **Barra de Progresso** – Mostra automaticamente a porcentagem de tarefas concluídas
 
-## 🔧 Instalação
+## 🔧 Como rodar
+
+**Pré-requisitos:** Node.js e um PostgreSQL rodando (local, Neon, Supabase, etc.)
+
 ```bash
-git clone https://github.com/your-username/task-management-app.git
-cd task-management-app
+# 1. Clone o repositório
+git clone https://github.com/VToMagnata/Front-Back-To-Do-List.git
+cd Front-Back-To-Do-List
+
+# 2. Instale as dependências
 npm install
-npx prisma migrate dev
+```
+
+**3. Crie um arquivo `.env` na raiz do projeto** com a conexão do seu PostgreSQL:
+
+```env
+DATABASE_URL="postgresql://USUARIO:SENHA@localhost:5432/tasks?schema=public"
+```
+
+```bash
+# 4. Crie as tabelas no banco
+npx prisma migrate dev --name init
+
+# 5. Gere o Prisma Client
+npx prisma generate
+
+# 6. Rode o projeto
 npm run dev
 ```
+
+Acesse em http://localhost:3000 🚀
