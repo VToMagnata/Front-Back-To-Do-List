@@ -4,7 +4,7 @@ import "dotenv/config";
 
 // 🔹 Importa o PrismaClient GERADO pelo Prisma (output customizado)
 // Esse client NÃO sabe se conectar sozinho no Prisma 7
-import { PrismaClient } from "@/generated/prisma";
+import { PrismaClient } from "@/generated/prisma/client";
 
 // 🔹 Adapter oficial do Prisma para PostgreSQL
 // Ele faz a ponte entre o Prisma e o driver `pg`
